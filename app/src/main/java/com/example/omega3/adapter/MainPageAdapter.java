@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.example.omega3.R;
+import com.example.omega3.activities.CalculatorActivity;
 import com.example.omega3.activities.MainPageActivity;
+import com.example.omega3.activities.ResearchWorkActivity;
 import com.example.omega3.model.MainPage;
 
 import java.util.List;
@@ -64,7 +66,17 @@ public class MainPageAdapter extends RecyclerView.Adapter<MainPageAdapter.MainPa
             int position = getAdapterPosition();
             MainPage mainPage = mainPageList.get(position);
 
-            Intent intent = new Intent(context, MainPageActivity.class);
+            Intent intent;
+
+            if (position == 0) {
+                intent = new Intent(context, MainPageActivity.class);
+            } else if (position == 1) {
+                intent = new Intent(context, CalculatorActivity.class);
+            } else if (position == 2) {
+                intent = new Intent(context, ResearchWorkActivity.class);
+            } else {
+                intent = new Intent(context, MainPageActivity.class);
+            }
 
             intent.putExtra("name", mainPage.getName());
 

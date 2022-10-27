@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.MainPageActivity"/>
+        <activity android:name=".activities.CalculatorActivity"/>
 
     </application>
 

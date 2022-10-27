@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".activities.CalculatorActivity">
+
+
+    <TextView
+            android:id="@+id/omegaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omega-3"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:background="@color/red"
+            android:layout_alignParentStart="true"/>
+
+
+    <EditText
+            android:id="@+id/inputOmegaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:hint="1000"
+            android:layout_toEndOf="@+id/omegaTextView"/>
+
+
+    <TextView
+            android:id="@+id/unitOmegaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mg"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:background="@color/red"
+            android:layout_toEndOf="@+id/inputOmegaTextView"/>
+
+
+    <TextView
+            android:id="@+id/epaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EPA"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:background="@color/red"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/omegaTextView"/>
+
+    <EditText
+            android:id="@+id/inputEPATextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:hint="1000"
+            android:layout_below="@+id/omegaTextView"
+            android:layout_toEndOf="@+id/epaTextView"/>
+
+    <TextView
+            android:id="@+id/unitEPATextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mg"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:background="@color/red"
+            android:layout_below="@+id/omegaTextView"
+            android:layout_toEndOf="@+id/inputEPATextView"/>
+
+
+    <TextView
+            android:id="@+id/dhaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DHA"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:background="@color/red"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/epaTextView"/>
+
+    <EditText
+            android:id="@+id/inputDHATextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:hint="1000"
+            android:layout_below="@+id/epaTextView"
+            android:layout_toEndOf="@+id/dhaTextView"/>
+
+    <TextView
+            android:id="@+id/unitDHATextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mg"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:background="@color/red"
+            android:layout_below="@+id/epaTextView"
+            android:layout_toEndOf="@+id/inputDHATextView"/>
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Расчёт"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/dhaTextView"/>
+
+
+</RelativeLayout>
